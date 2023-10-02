@@ -1,6 +1,7 @@
 .footer{
     width: 120rem;
     color: white;
+    background-color: black;
     display: grid;
     grid-template-columns: auto auto;
     border-top: 1px solid transparent;
@@ -26,7 +27,7 @@
             width: 30vw;
             margin-left: 6.5vw;
             a{
-                color: white;  
+                color: white;
                 text-decoration: none;
             }
         }
@@ -86,7 +87,7 @@
             .cod-conduct{
                 display: none;
             }
-            
+
             img{
                 justify-content: center;
                 align-items: center;
@@ -98,7 +99,7 @@
                 margin-top: 6vh;
                 margin-bottom: 5vw;
             }
-            
+
             p{
                 text-align: center;
                 margin-left: -11vw;
