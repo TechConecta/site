@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { RIVE_FOLDER, RiveModule } from 'ng-rive';
+import { RIVE_FOLDER, RiveModule, RiveCanvas, RiveLinearAnimation } from 'ng-rive';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -45,6 +45,8 @@ import { WhoWeAreComponent } from './who-we-are/who-we-are.component';
     PoModule,
     RouterModule.forRoot([]),
     PoTemplatesModule,
+    RiveCanvas,
+    RiveLinearAnimation,
     RiveModule
   ],
   providers: [{
