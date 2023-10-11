@@ -1,19 +1,18 @@
 .event-card {
     color: white;
-    margin: 0;
+    margin: -20;
     padding: 0;
     margin-left: 8vw;
 
     h1 {
-        background: linear-gradient(91.06deg, #ffffff 2.26%, #7589ff 23.78%);
+        background:white;
         -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
         background-clip: text;
-        font-weight: 700;
+        font-weight: 300;
         font-size: 2.5rem;
         line-height: 130%;
-        margin-top: 200px;
-        margin-bottom: 200px;
+        margin-top: 90px;
+        margin-bottom: 110px;
         letter-spacing: 0.16em;
         text-transform: uppercase;
     }
@@ -21,12 +20,12 @@
     .content {
         display: grid;
         grid-template-columns: auto auto auto;
-        margin-top: -90px;
+        margin-top: -50px;
 
         .card {
             background-color: #010814;
             width: 24vw;
-            margin-bottom: 40px;
+            margin-bottom: 0px;
 
             h3 {
                 border-top: 1px solid #7589ff;
@@ -121,10 +120,9 @@
     font-weight: 500;
     font-size: 1.25rem;
     line-height: 130%;
-
     letter-spacing: 0.72px;
-    margin-bottom: 275px;
-    margin-top: 30px;
+    margin-bottom: 15px;
+    margin-top: 5px;
     color: #c5c5c5;
 }
 .warning {

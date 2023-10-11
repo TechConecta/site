@@ -7,6 +7,9 @@ import { MenuItem } from './@thinkam/pilot/models/menu-item.model';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  title(title: any) {
+    throw new Error('Method not implemented.');
+  }
   readonly logoSrc: string = 'assets/images/techconecta-logotipo.svg';
   readonly menus: Array<MenuItem> = [
     {

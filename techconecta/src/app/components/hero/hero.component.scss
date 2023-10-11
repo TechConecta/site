@@ -1,12 +1,13 @@
 #home {
-    margin-bottom: -30vh;
+    margin-top: -10vh;
+    margin-bottom: -70vh;
     background-repeat: no-repeat;
     background-size: cover;
     height: 180vh;
     .desktop{
         display: inline;
         width: 100%;
-        margin-top: -85vh;
+        margin-top: 40vh;
     }
     .content {
         text-align: center;
@@ -22,7 +23,7 @@
                 font-family: 'Chakra Petch';
                 font-style: normal;
                 font-weight: 700;
-                font-size: 24px;
+                font-size: 40px;
                 line-height: 130%;
                 text-align: center;
                 letter-spacing: 0.24em;
@@ -31,7 +32,7 @@
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
                 background-clip: text;
-                text-fill-color: transparent;
+                text-emphasis-color: transparent;
             }
         }
         h1 {
@@ -40,7 +41,7 @@
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
                 background-clip: text;
-                padding-top: 48px;    
+                padding-top: 28px;    
                 width: 96vw;
                 font-size: 4rem;  
                 display: flex;
@@ -59,7 +60,7 @@
             p {
                 letter-spacing: 0.72px;
                 color: #FAFAFA;
-                padding-top: 64px;
+                padding-top: 54px;
 
                 font-weight: 400;
                 font-size: 20px;
@@ -67,7 +68,8 @@
             }
         }
         .mouse-scroll {
-            padding-top: 8vh;
+            position: inherit;
+            padding-top: 10vh;
             padding-bottom: 0px;
             background-color: transparent;
         }
@@ -117,7 +119,7 @@
     #home {
         height: 160vh;
         .desktop{
-            margin-top: -45vh;
+            margin-top: -445vh;
         }
     }
 }
