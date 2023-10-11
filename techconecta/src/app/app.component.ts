@@ -15,7 +15,7 @@ export class AppComponent {
     {
       path: '',
       label: 'Eventos',
-      link: '/',
+      link: '#events',
       isCTA: false
     },
     {
@@ -27,19 +27,19 @@ export class AppComponent {
     {
       path: 'photos',
       label: 'Fotos',
-      link: '#photos',
+      link: 'https://instagram.com/tech_conectaa',
       isCTA: false
     },
     {
       path: 'partnerships',
       label: 'Parcerias',
-      link: '#partnerships',
+      link: '#partners',
       isCTA: false
     },
     {
       path: 'register',
       label: 'FAÇA PARTE',
-      link: 'register',
+      link: '#be-part',
       isCTA: true
     }
   ];
