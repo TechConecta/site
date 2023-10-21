@@ -1,6 +1,6 @@
 .event-card {
     color: white;
-    margin: -20;
+    margin: 20;
     padding: 0;
     margin-left: 8vw;
 
@@ -168,7 +168,7 @@ button {
 @media screen and (max-width: 1728px) {
     .event-card {
         .content {
-            // margin-left: 8vw;
+             margin-left: 8vw;
         }
     }
 }
