@@ -21,6 +21,7 @@
     "@rive-app/canvas-advanced": "^2.4.3",
     "@thinkam/typeairtable": "^1.1.2",
     "bootstrap": "^5.2.2",
+    "firebase": "^10.5.0",
     "lottie-web": "^5.12.2",
     "ng-rive": "^0.3.1",
     "ngx-lottie": "^10.0.0",

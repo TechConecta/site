@@ -102,3 +102,5 @@ dist
 
 # TernJS port file
 .tern-port
+techconecta/src/environments/environment.prod.ts
+techconecta/src/environments/environment.ts
