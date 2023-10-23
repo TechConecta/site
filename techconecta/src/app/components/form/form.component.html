@@ -5,21 +5,45 @@
         <p class="conect">Conecte-se também pelo grupo no Telegram, Discord ou Slack</p>
 
         <div class="social-icons">
-            <a target="_blank" href="https://t.me/+Pkvilztk63E4ODA5"><img class="icons-box" src="../../../assets/images/Logo_one_color/blue/telegram.svg" alt=""></a>
-            <a target="_blank" href="https://devpp-slack.herokuapp.com/"><img class="icons-box" src="../../../assets/images/Logo_one_color/blue/slack.svg" alt=""></a>
-            <a target="_blank" href="https://discord.gg/Yp5dns5gK5"><img class="icons-box" src="../../../assets/images/Logo_one_color/blue/discord_logo.svg" alt=""></a>
-            <a target="_blank" href="https://github.com/dev-pp"><img class="icons-box none" src="../../../assets/images/Logo_one_color/blue/github.svg" alt=""></a>
+            <a title="Telegram" rel="noopener" target="_blank" href="https://t.me/+Pkvilztk63E4ODA5"><img class="icons-box" src="../../../assets/images/Logo_one_color/blue/telegram.svg" alt=""></a>
+            <a title="Slack" rel="noopener" target="_blank" href="https://devpp-slack.herokuapp.com/"><img class="icons-box" src="../../../assets/images/Logo_one_color/blue/slack.svg" alt=""></a>
+            <a title="Discord" rel="noopener" target="_blank" href="https://discord.gg/Yp5dns5gK5"><img class="icons-box" src="../../../assets/images/Logo_one_color/blue/discord_logo.svg" alt=""></a>
+            <a title="GitHub" rel="noopener" target="_blank" href="https://github.com/dev-pp"><img class="icons-box none" src="../../../assets/images/Logo_one_color/blue/github.svg" alt=""></a>
         </div>
     </div>
-    <div class="form">
-        <p>Cadastre-se para não perder nenhum conteúdo</p>
-        <input type="text" class="input" placeholder="NOME">
-        <input type="text" class="input" placeholder="E-MAIL">
-        <input type="text" class="input" placeholder="WHATSAPP/TELEGRAM">
-        <select name="" id="">
+    <form class="form" [formGroup]="leadForm">
+        <p *ngIf="!leadCreated">Cadastre-se para não perder nenhum conteúdo</p>
+        <p *ngIf="leadCreated">Dados enviados com sucesso!</p>
+        <input
+          formControlName="name"
+          type="text"
+          name="name"
+          class="input"
+          placeholder="NOME">
+        <input
+          formControlName="email"
+          type="email"
+          name="email"
+          class="input"
+          placeholder="E-MAIL">
+        <input
+          formControlName="cellphone"
+          type="text"
+          name="cellphone"
+          class="input"
+          placeholder="WHATSAPP/TELEGRAM">
+        <select formControlName="area" title="Área de Atuação" name="area" id="area">
             <option value="">ÁREA DE ATUAÇÃO</option>
+            <option value="DESIGN">DESIGN</option>
+            <option value="">IOT</option>
+            <option value="IOT">DATA SCIENCE</option>
+            <option value="PROGRAMAÇÃO">PROGRAMAÇÃO</option>
+            <option value="MARKETING">MARKETING</option>
+            <option value="BANCO DE DADOS">BANCO DE DADOS</option>
+            <option value="GESTÃO DE PROJETOS">GESTÃO DE PROJETOS</option>
+            <option value="NEGÓCIO">NEGÓCIO</option>
         </select>
 
-        <button type="submit">ENVIAR <img src="../../../assets/images/arrow-right.svg" alt=""></button>
-    </div>
+        <button (click)="SendForm()" type="button">ENVIAR <img src="../../../assets/images/arrow-right.svg" alt=""></button>
+    </form>
 </div>

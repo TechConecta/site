@@ -19,6 +19,7 @@
     "@angular/platform-browser-dynamic": "^16.2.0",
     "@angular/router": "^16.2.0",
     "@rive-app/canvas-advanced": "^2.4.3",
+    "@thinkam/typeairtable": "^1.1.2",
     "bootstrap": "^5.2.2",
     "lottie-web": "^5.12.2",
     "ng-rive": "^0.3.1",

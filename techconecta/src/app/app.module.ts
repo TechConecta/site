@@ -21,6 +21,7 @@ import { BePartOfItComponent } from './components/be-part-of-it/be-part-of-it.co
 import { BePartOfItTwoComponent } from './components/be-part-of-it-two/be-part-of-it-two.component';
 import { WhoWeAreComponent } from './who-we-are/who-we-are.component';
 import { MouseScrollComponent } from './components/mouse-scroll/mouse-scroll.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 export function playerFactory(): any {
   return import('lottie-web');
@@ -47,6 +48,7 @@ export function playerFactory(): any {
   imports: [
     BrowserModule,
     AppRoutingModule,
+    ReactiveFormsModule,
     RouterModule.forRoot([]),
     LottieModule.forRoot({ player: playerFactory }),
   ],
